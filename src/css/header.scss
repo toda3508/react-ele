@@ -1,0 +1,90 @@
+.Header{
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    .bg{
+        width: 100%;
+        height: 100%;
+        background: url(../img/seller_avatar_256px.jpg) no-repeat;
+        background-size:100% 100%;
+        -webkit-filter: blur(5px); /* Chrome, Opera */
+        -moz-filter: blur(5px);
+         -ms-filter: blur(5px);    
+             filter: blur(5px); 
+    }
+    .cont{
+        position: absolute;
+        left:45px;
+        top:35px;
+        color:#fff;
+        img{
+            float: left;
+            width: 20%;
+        }
+        .middle-list{
+            box-sizing: border-box;
+            float: left;
+            width: 80%;
+            padding-left:20px;
+            h3{
+                font-weight: bold;
+                font-size:18px;
+                i{
+                    display: inline-block;
+                    margin-right: 5px;
+                    width: 30px;
+                    height: 18px;
+                    background: url(../img/002.png);
+                    background-size:30px 18px;
+                    vertical-align:middle;
+                }
+            }
+            p{
+          
+                i{
+                    display: inline-block;
+                    margin-right: 5px;
+                    width: 15px;
+                    height: 15px;
+                    background: url(../img/003.png);
+                    background-size:15px 15px;
+                    vertical-align:middle;
+                }
+                font-size:12px;
+                line-height: 25px;
+                span{
+                    font-size:12px;
+                    background: rgba(0, 0, 0, 0.2);
+                    border-radius:10px;
+                    padding:2px 13px;
+                    position: absolute;
+                    right:10px;
+                }
+            }
+            
+        }
+      
+    }
+    .news{
+        position: absolute;
+        bottom:0;
+        left:20px;
+        color:#fff;
+        font-size: 10px;
+        width:90%;
+        word-break:keep-all;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    
+    
+        i{
+            display: inline-block;
+            width: 22px;
+            height: 15px;
+            background: url(../img/001.png);
+            background-size:22px 15px;
+            vertical-align:middle;
+        }
+    }
+}
