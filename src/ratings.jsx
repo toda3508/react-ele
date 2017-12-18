@@ -8,12 +8,16 @@ class Ragings extends Component {
       name:0,   
     }
   }
+  componentDidMount(){
+    console.log(this.props.location.state)
+  }
   test(){
     this.setState({name:100})
    
   }
   render() {
-    console.log(this.props)
+   
+    
     return (
       <div className="Goods" onClick={(e) => this.test()}>
         我是Ragings组件

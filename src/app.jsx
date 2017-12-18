@@ -14,7 +14,12 @@ import {
   } from 'react-router-dom'
   
 class App extends React.Component {
-  
+    constructor(){
+      super()
+      this.state = {
+        lyh:'kyle'
+      }
+    }
     componentDidMount(){
 
 
@@ -35,10 +40,11 @@ class App extends React.Component {
            <ul className="routerLinks">
              <li><Link to="/">商品</Link></li>
              <li><Link to="/ratings">评论</Link></li>
+             {/* <li><Link to={{pathname:"/ratings", hash:'#ahash', query:{foo: 'bar', boo:'boz'}, state:{data:this.state.lyh}  }}>评论</Link></li> */}
              <li><Link to="/shops">商家</Link></li>
            </ul>
            <Route exact path="/"  component={Goods}/>
-           <Route path="/ratings/" component={Ratings}/>
+           <Route path="/ratings" component={Ratings}/>
            <Route path="/shops" component={Shops}/>
          </div>
        </Router>

@@ -23,6 +23,7 @@ class Goods extends Component {
     // 点击左侧菜单右侧滚动到对应的标题
     this.foodsScroll.scrollToElement(this.refs.foodsWrapper.getElementsByClassName('food-list-hook')[index], 300);
    
+   
   }
   componentWillMount() {
     // 获取商品数据
@@ -45,7 +46,7 @@ class Goods extends Component {
   }
   componentDidMount(){
     let _this =this;
-   
+  
 
 
    setTimeout(()=>{
@@ -64,7 +65,6 @@ class Goods extends Component {
     _this.menuScroll = new BScroll(this.refs.menu, {
       click:true,
     }) 
-
     _this.foodsScroll = new BScroll(this.refs.foodsWrapper, {
       click: true,
       probeType: 3
@@ -73,6 +73,7 @@ class Goods extends Component {
     // 滚动右边联动左边
     _this.foodsScroll.on('scroll', (pos) => {
       // 判断是否是点击事件进入
+      console.log(665)
       if(this.state.isclick){
         return;
       }
@@ -91,6 +92,7 @@ class Goods extends Component {
   }
   // 改变isclick标记
   cancelCli(){
+    console.log(321)
     this.state.isclick = false;
   }
  
